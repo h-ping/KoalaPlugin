@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="com.kalengo.plugin.koalaplugin"
+           id="com.kalengo.plugin.koalaPlugin"
       version="0.1.0">
     <name>koala</name>
     <description>koala Plugin</description>
