@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="com.kalengo.plugin.koalaplugin"
+      version="0.1.0">
+    <name>koala</name>
+    <description>koala Plugin</description>
+    <license>MIT</license>
+    <keywords>phonegap,koala</keywords>
+
+
+    <js-module src="www/koala.js" name="KoalaPlugin">
+        <clobbers target="KLG.plugins.koala" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="KoalaPlugin">
+                <param name="android-package" value="com.kalengo.loan.plugins.KoalaPlugin"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/KoalaPlugin.java" target-dir="src/com/kalengo/loan/plugins" />
+     </platform> 
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="KoalaPlugin">
+                <param name="ios-package" value="CDVKoalaPlugin"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVKoalaPlugin.h" />
+        <source-file src="src/ios/CDVKoalaPlugin.m" />
+     </platform>
+</plugin>
