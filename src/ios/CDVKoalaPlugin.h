@@ -12,8 +12,6 @@
 
 @interface CDVKoalaPlugin : CDVPlugin
 
-@property (nonatomic,copy) NSString *callbackID;
-
 - (void)do:(CDVInvokedUrlCommand*)command;
 
 @end
